@@ -11,9 +11,9 @@ public class MediaHolder extends RecyclerView.ViewHolder {
     public TextView textView;
     public ImageView imageView;
 
-    public MediaHolder(@NonNull View itemView, TextView textView, ImageView imageView) {
+    public MediaHolder(@NonNull View itemView) {
         super(itemView);
-        this.textView = textView;
-        this.imageView = imageView;
+        this.textView = itemView.findViewById(R.id.exerciseName);
+        this.imageView = itemView.findViewById(R.id.exercisePic);
     }
 }
